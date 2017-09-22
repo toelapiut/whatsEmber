@@ -15,7 +15,7 @@ export default Ember.Component.extend({
         notes: this.get('notes') ? this.get('notes') : "Sorry no notes"
       };
 
-    // lines with empty parenthesis eg this.set('author', ''); 
+      // lines with empty parenthesis eg this.set('author', '');
       this.set('author', '');
       this.set('asked', '');
       this.set('asked', '');
