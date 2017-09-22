@@ -19,12 +19,12 @@ module.exports = function(environment) {
     },
 
     firebase: {
-      apiKey: "AIzaSyCquOBojeBUiVDOqIoqChgkzy71kczuXDo",
-      authDomain: "whatsember-b9428.firebaseapp.com",
-      databaseURL: "https://whatsember-b9428.firebaseio.com",
-      projectId: "whatsember-b9428",
-      storageBucket: "whatsember-b9428.appspot.com",
-      messagingSenderId: "975849060707"
+      apiKey: "AIzaSyDJ0HQqpI_MPhKjie3OUcXyfbl8x-lLOm8",
+      authDomain: "whatsember-5b5a7.firebaseapp.com",
+      databaseURL: "https://whatsember-5b5a7.firebaseio.com",
+      projectId: "whatsember-5b5a7",
+      storageBucket: "whatsember-5b5a7.appspot.com",
+      messagingSenderId: "993747650847"
     },
 
     APP: {
