@@ -18,6 +18,15 @@ module.exports = function(environment) {
       }
     },
 
+    firebase: {
+      apiKey: "AIzaSyCquOBojeBUiVDOqIoqChgkzy71kczuXDo",
+      authDomain: "whatsember-b9428.firebaseapp.com",
+      databaseURL: "https://whatsember-b9428.firebaseio.com",
+      projectId: "whatsember-b9428",
+      storageBucket: "whatsember-b9428.appspot.com",
+      messagingSenderId: "975849060707"
+    },
+
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
