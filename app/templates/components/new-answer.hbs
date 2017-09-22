@@ -1,1 +1,18 @@
-{{yield}}
+{{#if addNewAnswer}}
+<h3>Give an answer</h3>
+<div>
+    <form class="col-md-3">
+        <div class="from-group">
+            {{input class="from-control" value=author id="author" placeholder="Name please..."}}
+        </div>
+        <div class="form-group">
+            {{textarea class="form-control" value=answered id="answered" placeholder="Your answer here..."}}
+        </div>
+
+        <button class="btn btn-success btn-sm" {{action 'saveAnswer'}}>Answer!</button>
+        <button class="btn btn-default" {{action 'cancelAnswerForm'}}>Cancel</button>
+    </form>
+</div>
+{{else}}
+<button class="btn btn-info btn-sm" {{action 'answerFormShow'}}>Answer!</button>
+{{/if}}
