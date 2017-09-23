@@ -1,0 +1,70 @@
+body{
+  background-image: url('/image/back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  width:100%;
+  color: white;
+}
+input[type=text] {
+  appearance: none;
+ background: none;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ border-bottom: 1px solid;
+ box-shadow: none;
+}
+textarea{
+  appearance: none;
+ background: none;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+ border-bottom: 1px solid;
+ box-shadow: none;
+}
+.page-header{
+  text-align: center;
+}
+img{
+  height: 200px;
+  padding:0;
+  margin-top: -90px;
+}
+.body{
+  background-image:
+}
+
+
+.eachQuiz{
+height: 50px;
+background-color:rgba(251, 250, 237, 0.84);
+width:50%;
+margin-top: 10px;
+border-radius: 10px;
+}
+
+ol{
+  list-style: none;
+}
+.wrapper{
+  background-repeat: no-repeat;
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  width:100%;
+}
+.delete img{
+  width: 20px;
+  height: 20px;
+  float: right;
+}
+.answerquiz img{
+  margin-bottom:70px;
+  width: 40px;
+  height: 40px;
+  float: left;
+}

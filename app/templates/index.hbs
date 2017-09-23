@@ -1,16 +1,22 @@
-<div class="page-header">
-  <img src="/image/ember.png">
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <ol>
-      {{#each model.questions as |question|}}
-        {{question-tile question=question}}
-      {{/each}}
-    </ol>
+<div class="wrapper">
+  <div class="page-header">
+    <img src="/image/ember.png">
   </div>
-  <div class="col-md-3">
-    {{new-question saveQuestion="saveQuestion"}}
+  <div class='container body'>
+    <div class="row">
+      <div class="col-md-6 col-xs-6 questions">
+        <ol>
+          {{#each model.questions as |question|}}
+            <div class="eachQuiz">
+              {{question-tile question=question}}
+            </div>
+          {{/each}}
+
+        </ol>
+      </div>
+      <div class="col-md-6 col-xs-6">
+        {{new-question saveQuestion="saveQuestion"}}
+      </div>
+    </div>
   </div>
 </div>
