@@ -7,6 +7,8 @@ body{
   margin: 0px;
   width:100%;
   color: white;
+font-family: 'Architects Daughter', cursive;
+  /*font-size: 3em;*/
 }
 input[type=text] {
   appearance: none;
@@ -30,11 +32,13 @@ img{
 .eachQuiz{
 color:black;
 }
-.question{
+.questions{
   border: 1px solid grey;
+  height: 100vh;
 }
 ol{
-  list-style: none;
+  list-style: upper-roman;
+  color: white;
 }
 .wrapper{
   background-repeat: no-repeat;
@@ -54,4 +58,11 @@ img{
   width: 40px;
   height: 40px;
   float: left;
+}
+h2,h1{
+  font-family: 'Fredericka the Great', cursive;
+}
+.delete{
+  float:left;
+  margin-top: -18px;
 }

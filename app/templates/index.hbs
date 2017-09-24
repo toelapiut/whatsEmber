@@ -5,7 +5,9 @@
   <div class='container body'>
     <div class="row">
       <div class="col-md-6 col-xs-6 questions">
+        <h1>Question</h1>
         <ol>
+
           {{#each model.questions as |question|}}
             <div class="eachQuiz">
               {{question-tile question=question}}
@@ -15,6 +17,7 @@
         </ol>
       </div>
       <div class="col-md-6 col-xs-6">
+
         {{new-question saveQuestion="saveQuestion"}}
       </div>
     </div>

@@ -1,21 +1,27 @@
 {{yield}}
-<div class="row">
-    <div class="col-md-5">
-        <div >
-            <div >
-                <h4>Notes on the question:</h4>
-            </div>
-            <div class="panel-body">
-                <p>{{question.notes}}</p>
-                <p><em>~{{question.author}}</em></p>
-            </div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <div class="panel panel-default">
+        <div class="notes">
+          <h4>Notes on the question:</h4>
         </div>
-    </div>
-</div>
-<button class="btn btn-danger btn-xs" {{action 'delete' question}}>Del Question</button>
+        <div class="panel-body">
+          <p>{{question.notes}}</p>
+          <p><em>~{{question.author}}</em></p>
+        </div>
+      </div>
 
-<h3>Answers</h3>
-<hr>
-{{#each question.answers as |answer|}}
-    {{answer-tile answer=answer destroyAnswer="destroyAnswer" }}
-{{/each}}
+
+    <!-- <button class="btn btn-danger btn-xs" {{action 'delete' question}}>Del Question</button> -->
+    <img src="/image/bin.png" {{action 'delete' question}} class="delete">
+    </div>
+    <div class="col-md-6 col-sm-6">
+      <h3>Answers</h3>
+      <hr>
+      {{#each question.answers as |answer|}}
+        {{answer-tile answer=answer destroyAnswer="destroyAnswer" }}
+      {{/each}}
+    </div>
+  </div>
+</div>
