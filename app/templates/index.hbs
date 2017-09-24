@@ -1,24 +1,26 @@
-<div class="wrapper">
-  <div class="page-header">
-    <img src="/image/logo.png">
-  </div>
-  <div class='container body'>
-    <div class="row">
-      <div class="col-md-6 col-xs-6 questions">
-        <h1>Question</h1>
-        <ol>
+<div class="container">
+  <div class="wrapper">
+    <div class="page-header">
+      <img src="/image/logo.png">
+    </div>
+    <div class='container body'>
+      <div class="row">
+        <div class="col-md-6 col-sm-6 questions">
+          <h1>Question</h1>
+          <ol>
 
-          {{#each model.questions as |question|}}
-            <div class="eachQuiz">
-              {{question-tile question=question}}
-            </div>
-          {{/each}}
+            {{#each model.questions as |question|}}
+              <div class="eachQuiz">
+                {{question-tile question=question}}
+              </div>
+            {{/each}}
 
-        </ol>
-      </div>
-      <div class="col-md-6 col-xs-6">
+          </ol>
+        </div>
+        <div class="col-md-6 col-sm-6">
 
-        {{new-question saveQuestion="saveQuestion"}}
+          {{new-question saveQuestion="saveQuestion"}}
+        </div>
       </div>
     </div>
   </div>

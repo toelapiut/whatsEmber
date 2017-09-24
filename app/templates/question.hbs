@@ -1,9 +1,11 @@
-<h2>{{model.author}}'s question</h2>
+<div class="container">
+  <h2>{{model.author}}'s question</h2>
 
-<h3>{{model.asked}}</h3>
+  <h3>{{model.asked}}</h3>
 
-{{edit-question question=model edit="edit"}}
+  {{edit-question question=model edit="edit"}}
 
-{{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer" }}
+  {{question-detail question=model destroyQuestion="destroyQuestion" destroyAnswer="destroyAnswer" }}
 
-{{new-answer saveAnswer="saveAnswer" question=model}}
+  {{new-answer saveAnswer="saveAnswer" question=model}}
+</div>
