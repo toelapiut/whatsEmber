@@ -34,11 +34,17 @@ color:black;
 }
 .questions{
   border: 1px solid grey;
-  height: 100vh;
+  border-radius: 5px;
+  height: 50vh;
+
+}
+.questions:hover{
+  box-shadow: 5px 5px 10px;
+  border:none;
 }
 ol{
   list-style: upper-roman;
-  color: white;
+  /*color: white;*/
 }
 .wrapper{
   background-repeat: no-repeat;
@@ -54,7 +60,6 @@ ol{
 }
 img{
   margin-top: 30px;
-  /*margin-bottom:70px;*/
   width: 40px;
   height: 40px;
   float: left;
@@ -65,4 +70,11 @@ h2,h1{
 .delete{
   float:left;
   margin-top: -18px;
+}
+
+.note{
+  color:black;
+}
+li{
+  list-style: none;
 }

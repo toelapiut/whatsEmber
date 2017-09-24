@@ -1,31 +1,25 @@
-<div class="container">
-  <div class="row">
-    {{#if addNewQuestion}}
-      <div class="col-md-6 col-sm-6">
-        <h3>Ask Question:</h3>
-        <div>
-          <form>
-            <div>
-              <div class="form-group">
-                {{input class="form-control" value=author id="author" placeholder="whose asking?"}}
-              </div>
-              <div class="form-group">
-                {{input class="form-control" value=asked id="asked" placeholder="Ask us..."}}
-              </div>
-              <div class="form-group">
-                {{textarea class="form-control" value=notes id="textArea" placeholder="About the question..."}}
-              </div>
-            </div>
-            <button class="btn btn-primary" {{action 'saveQuestion'}}>Ask!</button>
-            <button class="btn btn-default" {{action 'cancelQuestionForm'}}>Cancel</button>
-
-          </form>
+{{#if addNewQuestion}}
+  <div class="col-md-6 col-sm-6">
+    <h3>Ask Question:</h3>
+    <form>
+      <div>
+        <div class="form-group">
+          {{input class="form-control" value=author id="author" placeholder="whose asking?"}}
+        </div>
+        <div class="form-group">
+          {{input class="form-control" value=asked id="asked" placeholder="Ask us..."}}
+        </div>
+        <div class="form-group">
+          {{textarea class="form-control" value=notes id="textArea" placeholder="About the question..."}}
         </div>
       </div>
-    {{else}}
-      <div class="col-md-6 col-sm-6">
-        <button class="btn btn-info" {{action 'questionFormShow'}}>Ask a question</button>
-      </div>
-    {{/if}}
+      <button class="btn btn-primary" {{action 'saveQuestion'}}>Ask!</button>
+      <button class="btn btn-default" {{action 'cancelQuestionForm'}}>Cancel</button>
+    </form>
+
   </div>
-</div>
+{{else}}
+  <div class="col-md-6 col-sm-6">
+    <button class="btn btn-info" {{action 'questionFormShow'}}>Ask a question</button>
+  </div>
+{{/if}}
