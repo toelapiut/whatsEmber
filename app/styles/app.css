@@ -7,7 +7,6 @@ body{
   margin: 0px;
   width:100%;
   color: white;
-font-family: 'Architects Daughter', cursive;
   /*font-size: 3em;*/
 }
 input[type=text] {
@@ -75,6 +74,13 @@ h2,h1{
 .note{
   color:black;
 }
-li{
+/*li{
   list-style: none;
+}*/
+nav li{
+  list-style: none;
+  word-spacing: normal;
+}
+nav ul li a{
+  word-spacing: normal;
 }
