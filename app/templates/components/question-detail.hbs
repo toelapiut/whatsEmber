@@ -1,21 +1,20 @@
 {{yield}}
 <div class="row">
     <div class="col-md-5">
-        <div class="panel panel-default">
-            <div class="panel-heading">
+        <div >
+            <div >
                 <h4>Notes on the question:</h4>
             </div>
             <div class="panel-body">
                 <p>{{question.notes}}</p>
                 <p><em>~{{question.author}}</em></p>
             </div>
-            <!-- <p></p> -->
         </div>
     </div>
 </div>
 <button class="btn btn-danger btn-xs" {{action 'delete' question}}>Del Question</button>
 
-<h3 data-spy="affix">Answers</h3>
+<h3>Answers</h3>
 <hr>
 {{#each question.answers as |answer|}}
     {{answer-tile answer=answer destroyAnswer="destroyAnswer" }}

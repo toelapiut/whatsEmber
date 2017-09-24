@@ -1,23 +1,23 @@
 {{#if addNewAnswer}}
-<h3>Give an answer</h3>
-<div>
+  <h3>Give an answer</h3>
+  <div>
     <form class="col-md-3">
-        <div class="from-group">
-            {{input class="from-control" value=author id="author" placeholder="Name please..."}}
-        </div>
-        <br/>
-        <div class="form-group">
-            {{textarea class="form-control" value=answered id="answered" placeholder="Your answer here..."}}
-        </div>
+      <div class="from-group">
+        {{input class="from-control" value=author id="author" placeholder="Name please..."}}
+      </div>
+      <br/>
+      <div class="form-group">
+        {{textarea class="form-control" value=answered id="answered" placeholder="Your answer here..."}}
+      </div>
 
-        <button class="btn btn-success btn-sm" {{action 'saveAnswer'}}>Answer!</button>
-        <button class="btn btn-default" {{action 'cancelAnswerForm'}}>Cancel</button>
+      <button class="btn btn-success btn-sm" {{action 'saveAnswer'}}>Answer!</button>
+      <button class="btn btn-default" {{action 'cancelAnswerForm'}}>Cancel</button>
     </form>
-</div>
+  </div>
 {{else}}
-<br/>
-<br/>
-<div class="answerquiz">
+  <br/>
+  <br/>
+
   <img src="/image/add.png" {{action 'answerFormShow'}}>
-</div>
+
 {{/if}}
