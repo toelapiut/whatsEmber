@@ -14,7 +14,7 @@ export default Ember.Component.extend({
         //end of Anonymousy
 
         question: this.get('question'),
-
+        dateAnswered: new Date().toISOString().substring(0, 1)
       };
 
       /*this line of code makes it possible for the author to be Anonymous

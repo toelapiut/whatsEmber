@@ -11,6 +11,7 @@
           {{#each model.questions as |question|}}
             <div class="eachQuiz">
               {{question-tile question=question}}
+              {{time-tag question}}
             </div>
           {{/each}}
 
