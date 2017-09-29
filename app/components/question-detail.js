@@ -9,6 +9,12 @@ export default Ember.Component.extend({
     },
     destroyAnswer(answer) {
       this.sendAction('destroyAnswer', answer);
+    },
+    answerUp(answer) {
+      this.sendAction('answerUp', answer);
+    },
+    answerDown(answer) {
+      this.sendAction('answerDown', answer);
     }
   }
 });

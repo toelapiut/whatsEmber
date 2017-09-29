@@ -22,7 +22,6 @@ export default Ember.Component.extend({
       this.set('author', '');
       this.set('answered', '');
 
-
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);
     },

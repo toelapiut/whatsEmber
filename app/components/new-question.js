@@ -20,11 +20,14 @@ export default Ember.Component.extend({
       this.set('asked', '');
       this.set('asked', '');
       this.set('notes', '');
+
       this.set('addNewQuestion', false);
       this.sendAction('saveQuestion', params);
+
     },
     cancelQuestionForm() {
       this.set('addNewQuestion', false);
     }
+    
   }
 });
