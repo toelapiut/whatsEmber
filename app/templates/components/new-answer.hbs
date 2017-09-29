@@ -6,7 +6,7 @@
         <div class="from-group">
           {{input class="from-control" value=author id="author" placeholder="Name please..."}}
         </div>
-        <br/>
+
         <div class="form-group">
           {{textarea class="form-control" value=answered id="answered" placeholder="Your answer here..."}}
         </div>
@@ -16,10 +16,6 @@
       </form>
     </div>
   {{else}}
-    <br/>
-    <br/>
-
     <img src="/image/add.png" {{action 'answerFormShow'}}>
-
   {{/if}}
 </div>

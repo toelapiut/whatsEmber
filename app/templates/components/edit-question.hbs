@@ -6,13 +6,15 @@
         <div class="form-group">
           {{input class="form-control" value=author id="author" placeholder=question.author}}
         </div>
+
         <div class="form-group">
           {{input class="form-control" value=asked id="asked" placeholder=question.asked}}
         </div>
+
         <div class="form-group">
           {{textarea class="form-control" value=notes id="notes" placeholder=question.notes}}
         </div>
-
+        
         <button class="btn btn-success" {{action 'edit' question}}>Save</button>
         <button class="btn btn-default" {{action 'cancelEditForm'}}>Cancel</button>
         <br><br>
