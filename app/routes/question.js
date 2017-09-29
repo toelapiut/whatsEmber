@@ -15,6 +15,8 @@ export default Ember.Route.extend({
       this.transitionTo('question');
     },
     saveAnswer(params) {
+      params.upvote = 0; //this gives the upvote a value of zero to initialise the steps to come ***answerUp***
+      params.downvote = 0; //this does the same to the down vote to be able to give the ***answerDown*** an intial value of zero
 
       var newAnswer = this.store.createRecord('answer', params);
       var question = params.question;
