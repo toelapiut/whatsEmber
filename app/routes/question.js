@@ -31,7 +31,21 @@ export default Ember.Route.extend({
     destroyQuestion(question) {
       question.destroyRecord();
       this.transitionTo('index');
+    },
+    /***This is the up and down vote section ***/
+    answerUp(answer) {
+      var vote = parseInt(this.get('upvote'));
+      vote += 1;
+      answer.set('upvote', vote);
+      answer.save();
+    },
+    answerDown(answer) {
+      var vote = parseInt(this.get('downvote'));
+      vote++;
+      answer.set('downvote', vote);
+      answer.save();
     }
+    /*** End of up and down vote ***/
   }
 
 });
