@@ -9,7 +9,6 @@ export default Ember.Component.extend({
 
     saveQuestion() {
       var params = {
-
         author: this.get('author') ? this.get('author') : "Anonymous",
         asked: this.get('asked') ? this.get('asked') : "Where's the question",
         notes: this.get('notes') ? this.get('notes') : "Sorry no notes"
@@ -28,6 +27,5 @@ export default Ember.Component.extend({
     cancelQuestionForm() {
       this.set('addNewQuestion', false);
     }
-    
   }
 });

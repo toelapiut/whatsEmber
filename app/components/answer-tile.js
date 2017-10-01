@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
   actions: {
     delete(answer) {
-      if (confirm('Please don not delete me ;(...')) {
+      if (confirm('Please do not delete me ;(...')) {
         this.sendAction('destroyAnswer', answer)
       }
     },
@@ -12,6 +12,6 @@ export default Ember.Component.extend({
     },
     answerDown(answer) {
       this.sendAction('answerDown', answer);
-    }
+    },
   }
 });

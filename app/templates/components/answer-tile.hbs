@@ -8,6 +8,7 @@
           <p id="ans-author"><em>~ by {{answer.author}}</em><span class="label label-default">{{answer.dateAnswered}}</span></p>
           <button type="button" class="btn btn-sm btn-primary" {{action 'answerUp' answer}}><span class="glyphicon glyphicon-thumbs-up"></span> {{answer.upvote}}</button>
           <button type="button" class="btn btn-sm btn-warning" {{action 'answerDown' answer}}><span class="glyphicon glyphicon-thumbs-down"></span> {{answer.downvote}}</button>
+
           <div class="delete">
             <img src="/image/delete.png" {{action 'delete' answer}}>
           </div>
