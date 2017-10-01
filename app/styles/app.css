@@ -1,3 +1,8 @@
+html{
+  box-sizing: border-box;
+  width: auto;
+  overflow: hidden;
+}
 body{
   background-image: url('/image/back.jpg');
   background-repeat: no-repeat;
@@ -5,85 +10,104 @@ body{
   height: 100vh;
   padding: 0px;
   margin: 0px;
-  width:100%;
   color: white;
+  width:cover;
+  box-sizing: border-box;
   /*font-size: 3em;*/
 }
+
 input[type=text] {
   appearance: none;
- background: none;
- border-top: none;
- border-right: none;
- border-left: none;
- border-bottom: 1px solid;
- box-shadow: none;
+  background: none;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid;
+  box-shadow: none;
 }
 
-.page-header{
+.page-header {
   text-align: center;
 }
-img{
+
+img {
   height: 200px;
-  padding:0;
+  padding: 0;
   margin-top: -90px;
 }
 
-.eachQuiz{
-color:black;
+.eachQuiz {
+  color: black;
 }
-.questions{
-  border: 1px solid grey;
+
+.questions {
   border-radius: 5px;
   height: 50vh;
+  margin-bottom: 50px;
+}
 
-}
-.questions:hover{
+.questions:hover {
   box-shadow: 5px 5px 10px;
-  border:none;
+  border: none;
 }
-ol{
+
+ol {
   list-style: upper-roman;
   /*color: white;*/
 }
-.wrapper{
+
+.wrapper {
   background-repeat: no-repeat;
   height: 100vh;
   padding: 0px;
   margin: 0px;
-  width:100%;
+  width: 100%;
 }
-.delete img{
+
+.delete img {
   width: 20px;
   height: 20px;
   float: right;
 }
-img{
+
+img {
   margin-top: 30px;
-  width: 40px;
+  /*width: 40px;*/
   height: 40px;
   float: left;
 }
-h2,h1{
+
+h2, h1 {
   font-family: 'Fredericka the Great', cursive;
 }
-.delete{
-  float:left;
+
+.delete {
+  float: left;
   margin-top: -18px;
 }
 
-.note{
-  color:black;
+.note {
+  color: black;
 }
+
+
 /*li{
   list-style: none;
 }*/
-nav li{
+
+nav li {
   list-style: none;
   word-spacing: normal;
 }
-nav ul li a{
+
+nav ul li a {
   word-spacing: normal;
 }
-.note{
-  color:black;
+
+.note {
+  color: black;
+}
+
+li {
+  color: white;
 }

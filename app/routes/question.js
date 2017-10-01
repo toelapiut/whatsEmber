@@ -38,7 +38,6 @@ export default Ember.Route.extend({
 
     answerUp(answer) {
       var vote = parseInt(this.get('upvote'));
-      console.log(vote);
       vote += 1;
       answer.set('upvote', vote);
       answer.save();
