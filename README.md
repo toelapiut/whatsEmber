@@ -1,7 +1,6 @@
 # whats-ember
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This app basically helps users to post there questions and will be answered with anybody.The app comes with extra features such as del the questions editing and gives the admin rights del answers that dont make sense.
 
 ## Prerequisites
 
