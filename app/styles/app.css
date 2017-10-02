@@ -111,3 +111,9 @@ nav ul li a {
 li {
   color: white;
 }
+a{
+  color: #ddedd5;
+}
+a:hover{
+  color:white
+}
